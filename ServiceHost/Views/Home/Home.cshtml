@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="Invoke Http Request" onclick="location.href='@Url.Action("InvokeHTTP", "Home")'" />
+        <input type="button" value="Invoke TCP Request" onclick="location.href='@Url.Action("InvokeTCP", "Home")'" />
+    </div>
+    <h1>@ViewBag.Message</h1>
+</body>
+</html>
